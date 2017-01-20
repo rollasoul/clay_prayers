@@ -2,5 +2,4 @@
 densecap and torch-rnn create little prayers out of clay
 (first stages, incomplete)
 
-docker pull:
-rollasoul/clay_phil
+docker run -it rollasoul/clay_phil
