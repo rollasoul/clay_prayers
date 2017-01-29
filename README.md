@@ -19,7 +19,7 @@ docker run -it -p 12345:12345 rollasoul/clay_phil
 python clay.py
 ```
 
-# raspberry pi:
+# raspberry pi setup:
 
 - install fswebcam for external usb-camera
 ```
