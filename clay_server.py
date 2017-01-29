@@ -136,40 +136,42 @@ while len(check_noun) != len(set(check_noun)):
     tagged2 = nltk.pos_tag(words2)
     tagged3 = nltk.pos_tag(words3)
 
+    try:
+		for i in range(0,len(words1)):
+        	# find nouns and verbs in line1 and store them
+        		if tagged1[i][1] == 'NN':
+                		check_noun.append(tagged1[i])
+        		if tagged1[i][1] == 'NNS':
+                		check_noun.append(tagged1[i])       
+        		if tagged1[i][1] == 'VBG':
+                		check_verb.append(tagged1[i])
+        		if tagged1[i][1] == 'VBZ':
+                		check_verb.append(tagged1[i])
 
-    for i in range(0,len(words1)):
-        # find nouns and verbs in line1 and store them
-        if tagged1[i][1] == 'NN':
-                check_noun.append(tagged1[i])
-        if tagged1[i][1] == 'NNS':
-                check_noun.append(tagged1[i])       
-        if tagged1[i][1] == 'VBG':
-                check_verb.append(tagged1[i])
-        if tagged1[i][1] == 'VBZ':
-                check_verb.append(tagged1[i])
-
-    for i in range(0,len(words2)):
-        # find nouns and verbs in line2 and store them
-        if tagged2[i][1] == 'NN':
-                check_noun.append(tagged2[i])
-        if tagged2[i][1] == 'NNS':
-                check_noun.append(tagged2[i])        
-        if tagged2[i][1] == 'VBG':
-                check_verb.append(tagged1[i])
-        if tagged2[i][1] == 'VBZ':
-                check_verb.append(tagged1[i])
-
-    for i in range(0,len(words3)):
-        # find nouns and verbs in line3 and store them
-        if tagged3[i][1] == 'NN':
-                check_noun.append(tagged3[i])
-        if tagged3[i][1] == 'NNS':
-                check_noun.append(tagged3[i])
-        if tagged3[i][1] == 'VBG':
-                check_verb.append(tagged1[i])
-        if tagged3[i][1] == 'VBZ':
-                check_verb.append(tagged1[i])
-
+   	 	for i in range(0,len(words2)):
+        		# find nouns and verbs in line2 and store them
+        		if tagged2[i][1] == 'NN':
+                		check_noun.append(tagged2[i])
+        		if tagged2[i][1] == 'NNS':
+                		check_noun.append(tagged2[i])        
+        		if tagged2[i][1] == 'VBG':
+                		check_verb.append(tagged1[i])
+        		if tagged2[i][1] == 'VBZ':
+                		check_verb.append(tagged1[i])
+	
+    		for i in range(0,len(words3)):
+        		# find nouns and verbs in line3 and store them
+        		if tagged3[i][1] == 'NN':
+                		check_noun.append(tagged3[i])
+        		if tagged3[i][1] == 'NNS':
+                		check_noun.append(tagged3[i])
+        		if tagged3[i][1] == 'VBG':
+                		check_verb.append(tagged1[i])
+        		if tagged3[i][1] == 'VBZ':
+                		check_verb.append(tagged1[i])
+    except IndexError:
+	pass
+		
     # check for existing lines with verbs 
     if not check_verb:
         check_noun = ['noun', 'noun', 'noun']
@@ -228,19 +230,21 @@ quote.close()
 # send image back to client
 s.listen(5)                
 print 'listening on port 12345'
-while True:
-   c, addr = s.accept()    
-   print 'Got connection from', addr
-   print "quote generated: %s" %(sen)
-   f=open ("/root/torch-rnn/quote.txt", "rb")
-   l = f.read(1024)
-   while (l):
-      c.send(l)
-      l = f.read(1024)
-
-   print "quote sent"
-   print c.recv(1024)
-   i = c.recv(1024)
-   if i != 0 :
-        print "closing connection"
-        c.close()                # Close the connection
+c, addr = s.accept()    
+print 'Got connection from', addr
+print "quote generated: %s" %(sen)
+f=open ("/root/torch-rnn/quote.txt", "rb")
+l = f.read(1024)
+while (l):
+	c.send(l)
+        l = f.read(1024)
+print "quote sent"
+f.close()
+c.send('done')
+print c.recv(1024)
+i = c.recv(1024)
+if "file received" in i:
+	print "closing connection"
+	time.sleep(1)
+	c.close()                # Close the connection
+	time.sleep(5)
