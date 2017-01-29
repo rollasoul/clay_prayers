@@ -1,5 +1,5 @@
 # clay_prayers
-densecap and torch-rnn create little prayers out of clay
+densecap and torch-rnn create little prayers and metaphysical quotes out of clay
 
 
 # server setup
