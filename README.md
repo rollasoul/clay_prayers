@@ -12,4 +12,4 @@ python clay_pi.py
 
 (make sure you have fswebcam installed)
 
-- still experimental, processing sketch not tested yet on pi - 
+-- still experimental, processing sketch not tested yet on pi --
