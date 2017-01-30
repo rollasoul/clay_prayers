@@ -227,7 +227,7 @@ while sen is None:
 quote = open("quote.txt", "w")
 quote.write("%s." % sen)
 quote.close()
-# send quote back to client as txt-file
+# send quote back to client
 s.listen(5)                
 print 'listening on port 12345'
 c, addr = s.accept()    
