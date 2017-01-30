@@ -1,4 +1,4 @@
-![alt tag]lthttps://github.com/rollasoul/clay_prayers/blob/master/16265646_243260219456703_1608198604390170781_n.jpg
+![alt tag](thttps://github.com/rollasoul/clay_prayers/blob/master/16265646_243260219456703_1608198604390170781_n.jpg)
 
 # clay_prayers
 Densecap and torch-rnn create little prayers and metaphysical quotes out of clay. Client is raspberry pi (or any other machine running python)
