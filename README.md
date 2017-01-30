@@ -1,5 +1,6 @@
 # clay_prayers
 densecap and torch-rnn create little prayers and metaphysical quotes out of clay
+client is raspberry pi (or any other machine running python)
 
 
 # server setup
