@@ -1,8 +1,11 @@
+![alt tag]lthttps://github.com/rollasoul/clay_prayers/blob/master/16265646_243260219456703_1608198604390170781_n.jpg
+
 # clay_prayers
 Densecap and torch-rnn create little prayers and metaphysical quotes out of clay. Client is raspberry pi (or any other machine running python)
 
-
 # server setup
+
+All of the files above for running the server are included in the docker image, no need to git clone them.
 
 - install docker on remote server (ubuntu 16.04)
 ```
@@ -20,6 +23,8 @@ python clay-run.py
 ```
 
 # raspberry pi setup:
+
+Git clone the repository to get all the files.
 
 - install fswebcam for external usb-camera
 ```
