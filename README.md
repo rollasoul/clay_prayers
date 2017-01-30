@@ -25,8 +25,7 @@ python clay-run.py
 ```
 install fswebcam
 ```
-- run processing sketch (waits for incoming quotes): clay.pde
-- run python script (waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote)
+- run python script (starts processing sketch, waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote, displays it in sketch)
 ```
-python clay_pi.py
+python clay_run_pi.py
 ```
