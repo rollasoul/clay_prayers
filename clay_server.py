@@ -198,7 +198,7 @@ print "clay-lines selected:"
 word_check = selection_line1 + ", " + selection_line2 + ", " + selection_line3
 print (word_check)
 
-# create quotes
+# generate quotes with torch-rnn trained on metaphysics philosophy
 print "creating quotes"
 os.chdir('/root/torch-rnn')
 
@@ -212,6 +212,7 @@ while sen is None:
   sents = nu.split('?')
   sents = ''.join(sents[1])
   sents = sents.split('.')
+  # pick sentence that is shorter than 10 words, check if the words in sentence exist and stop the generation of quotes
   for x in sents[1:-1]:
         if len(x.split()) < 10:
             counter = 0
@@ -223,11 +224,10 @@ while sen is None:
                     sen = ' '.join(x.split())
                     print "%s." % sen
                     break
-  #break
 quote = open("quote.txt", "w")
 quote.write("%s." % sen)
 quote.close()
-# send image back to client
+# send quote back to client as txt-file
 s.listen(5)                
 print 'listening on port 12345'
 c, addr = s.accept()    
