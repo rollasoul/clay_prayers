@@ -25,8 +25,8 @@ python clay-run.py
 ```
 install fswebcam
 ```
+- run processing sketch (waits for incoming quotes): clay.pde
 - run python script
 ```
 python clay_pi.py
 ```
--- still experimental, processing sketch not tested yet on pi --
