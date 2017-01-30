@@ -16,7 +16,7 @@ docker run -it -p 12345:12345 rollasoul/clay_phil
 
 - run python script
 ```
-python clay.py
+python clay_run.py
 ```
 
 # raspberry pi setup:
