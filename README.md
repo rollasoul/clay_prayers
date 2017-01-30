@@ -1,7 +1,7 @@
 <img src="https://github.com/rollasoul/clay_prayers/blob/master/16265646_243260219456703_1608198604390170781_n.jpg" width="400">
 
 # clay_prayers
-Densecap and torch-rnn create little prayers and metaphysical quotes out of clay. Client is raspberry pi (or any other machine running python)
+Densecap and torch-rnn create philosophical quotes out of clay. Client is raspberry pi (or any other machine running python).
 
 # server setup
 
