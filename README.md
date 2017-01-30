@@ -14,7 +14,7 @@ sudo apt-get install docker.io
 docker run -it -p 12345:12345 rollasoul/clay_phil
 ```
 
-- run python script
+- run python script (loops clay.py to continuously listen for incoming data from client)
 ```
 python clay-run.py
 ```
