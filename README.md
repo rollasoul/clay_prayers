@@ -14,7 +14,7 @@ sudo apt-get install docker.io
 docker run -it -p 12345:12345 rollasoul/clay_phil
 ```
 
-- run python script (loops clay.py to continuously listen for incoming data from client)
+- run python script (loops clay.py to continuously listen for incoming data from client, analyses image with densecap, seeds haiku-captions to torch-rnn, generates quote, sends it back to client)
 ```
 python clay-run.py
 ```
@@ -28,5 +28,5 @@ install fswebcam
 - run processing sketch (waits for incoming quotes): clay.pde
 - run python script
 ```
-python clay_pi.py
+python clay_pi.py (takes image, sends it to server, gets quote)
 ```
