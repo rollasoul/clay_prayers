@@ -19,7 +19,7 @@ docker run -it -p 12345:12345 rollasoul/clay_phil
 
 - run python script (loops clay.py to continuously listen for incoming data from client, analyses image with densecap, seeds haiku-captions to torch-rnn, generates quote, sends it back to client)
 ```
-python clay-run.py
+python clay_script.py
 ```
 
 # raspberry pi setup:
