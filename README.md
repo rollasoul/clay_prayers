@@ -28,7 +28,7 @@ Git clone the repository to get all the files.
 
 - install fswebcam for external usb-camera
 ```
-install fswebcam
+sudo apt-get install fswebcam
 ```
 - run python script (starts processing sketch, waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote, displays it in sketch)
 ```
