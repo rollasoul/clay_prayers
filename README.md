@@ -2,6 +2,7 @@
 
 # clay_prayers
 Densecap and torch-rnn create philosophical quotes out of clay. Client is raspberry pi (or any other machine running python).
+Prototype on vimeo: https://vimeo.com/202647741/ce96d7d976  
 
 # server setup
 
