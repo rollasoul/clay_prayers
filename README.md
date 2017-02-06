@@ -34,5 +34,5 @@ sudo apt-get install fswebcam
 - run processing script "clay.pde" - will ask if it should create folder for .pde, click "yes"
 - run python script (starts processing sketch, waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote, displays it in sketch)
 ```
-python clay_pi.py
+sudo python clay_pi.py
 ```
