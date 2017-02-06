@@ -16,7 +16,7 @@ while True:
 		os.system('fswebcam --no-banner -S 20 claycam.jpg')
 		# send image
 		s = socket.socket()
-		host = "147.75.102.59"
+		host = "TO DO: fill in external ip of remote server"
 		port = 12345
 		s.connect((host, port))
 		time.sleep (2)
@@ -33,7 +33,7 @@ while True:
 		print "done"
 		time.sleep(6)
 		s = socket.socket()
-		host = "147.75.102.59"
+		host = "TO DO: fill in external ip of remote server"
 		port = 12345
                 
 		s.connect((host, port))
