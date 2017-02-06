@@ -25,13 +25,13 @@ python clay_script.py
 
 # raspberry pi setup:
 
-Git clone the repository to get all the files, change server address in clay_pi.py file.
-
+Git clone the repository to get all the files, change server address in clay_pi.py fi.
+- run processing script "clay.pde" - will ask if it should create folder for .pde, click "yes"
 - install fswebcam for external usb-camera
 ```
 sudo apt-get install fswebcam
 ```
 - run python script (starts processing sketch, waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote, displays it in sketch)
 ```
-python clay_run_pi.py
+python clay_pi.py
 ```
