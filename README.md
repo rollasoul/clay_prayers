@@ -8,7 +8,7 @@ Prototype on vimeo: https://vimeo.com/202647741/ce96d7d976
 
 All of the files above for running the server are included in the docker image, no need to git clone them.
 
-- install docker on remote server (ubuntu 16.04)
+- install docker on remote server (ubuntu 16.04, minimum 6GB RAM)
 ```
 sudo apt-get install docker.io
 ```
@@ -24,7 +24,7 @@ python clay_script.py
 ```
 
 # raspberry pi setup:
-
+Tested on Raspbian Jessie (2017-01-11).
 Git clone the repository to get all the files, change server address in clay_pi.py fi.
 - install fswebcam for external usb-camera
 ```
