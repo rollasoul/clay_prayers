@@ -25,7 +25,7 @@ python clay_script.py
 
 # raspberry pi setup:
 
-Git clone the repository to get all the files.
+Git clone the repository to get all the files, change server address in clay_pi.py file.
 
 - install fswebcam for external usb-camera
 ```
