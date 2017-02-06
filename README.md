@@ -26,7 +26,7 @@ python clay_script.py
 # raspberry pi setup:
 Tested on raspberry pi 3 running raspbian jessie (2017-01-11).
 - connect USB-webcam and light-sensor to raspberry pi
-- git clone the repository to get all the files, change server address in clay_pi.py fi.
+- git clone the repository to get all the files, change server address in clay_pi.py.
 - install fswebcam for external usb-camera
 ```
 sudo apt-get install fswebcam
