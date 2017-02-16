@@ -15,7 +15,7 @@ sudo apt-get install docker.io
 
 - run docker image (will start download and image)
 ```
-docker run -it -p 12345:12345 rollasoul/clay_phil
+docker run -it -p 12345:12345 rollasoul/meta_clay
 ```
 
 - run python script (loops clay.py to continuously listen for incoming data from client, analyses image with densecap, seeds haiku-captions to torch-rnn, generates quote, sends it back to client)
