@@ -37,7 +37,8 @@ sudo apt-get install fswebcam
 sudo python clay_pi.py
 ```
 
-# mac setup (in case you have no raspberry pi and no light-sensor):
+# mac setup:
+(in case you have no raspberry pi and no light-sensor)
 - using built-in camera
 - git clone the repository to get all the files, change server address in clay_mac.py.
 - install cv2 via homebrew for built-in camera access with this tutorial: http://seeb0h.github.io/howto/howto-install-homebrew-python-opencv-osx-el-capitan/
