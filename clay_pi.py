@@ -25,6 +25,7 @@ while True:
 		while (l):
       			s.send(l)
      			l = f.read(4096)
+		s.send("end")
 		time.sleep(3)
 		print "image sent"   
 		s.close()                # Close the connection
