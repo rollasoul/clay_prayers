@@ -18,7 +18,7 @@ while True:
 
 	# send image
 	s = socket.socket()
-	host = "147.75.100.71"
+	host = "TO DO: enter remote server ip"
 	port = 12345
 	s.connect((host, port))
 	time.sleep (2)
@@ -36,7 +36,7 @@ while True:
 	print "done"
 	time.sleep(6)
 	s = socket.socket()
-	host = "147.75.100.71"
+	host = "TO DO: enter remote server ip"
 	port = 12345
 	        
 	s.connect((host, port))
