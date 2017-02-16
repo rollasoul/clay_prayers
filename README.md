@@ -37,13 +37,13 @@ sudo apt-get install fswebcam
 sudo python clay_pi.py
 ```
 
-# mac setup (in case you have no raspberry pi):
+# mac setup (in case you have no raspberry pi and no light-sensor):
 - using built-in camera
 - git clone the repository to get all the files, change server address in clay_mac.py.
 - install cv2 via homebrew for built-in camera access with this tutorial: http://seeb0h.github.io/howto/howto-install-homebrew-python-opencv-osx-el-capitan/
 
 - run processing script "clay.pde" - will ask if it should create folder for .pde, click "yes"
-- run python script from inside your git-folder(starts processing sketch, waits for light sensor to detect light change, takes image of clay, sends it to server, gets quote, displays it in sketch)
+- run python script continuously from inside your git-folder(starts processing sketch, takes image of clay, sends it to server, gets quote, displays it in sketch)
 ```
 sudo python clay_mac.py
 ```
