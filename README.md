@@ -36,6 +36,10 @@ sudo apt-get install fswebcam
 ```
 sudo python clay_pi.py
 ```
+- if you have a distance sensor like the HC-RS04, run this script instead
+```
+sudo python clay_senses.py
+```
 
 # mac setup:
 (in case you have no raspberry pi and no light-sensor)
