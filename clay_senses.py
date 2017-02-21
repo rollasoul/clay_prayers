@@ -56,7 +56,7 @@ def sensor():
 			os.system('fswebcam --no-banner -S 20 claycam.jpg')
 			# send image
 			s = socket.socket()
-			host = "147.75.102.167"
+			host = "TO DO: insert external ip-address of remote server here!"
 			port = 12345
 			s.connect((host, port))
 			time.sleep (2)
@@ -73,7 +73,7 @@ def sensor():
 			print "done"
 			time.sleep(6)
 			s = socket.socket()
-			host = "147.75.102.167"
+			host = "TO DO: insert external ip-address of remote server here!"
 			port = 12345        
 			s.connect((host, port))
 			print " get quote"
